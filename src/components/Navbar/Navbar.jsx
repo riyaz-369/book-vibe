@@ -6,6 +6,7 @@ const Navbar = () => {
         <li><NavLink to='/listed-books'>Listed Books</NavLink></li>
         <li><NavLink to='/pages-read'>Pages to Read</NavLink></li>
         <li><NavLink to='/latest'>Latest Books</NavLink></li>
+        <li><NavLink to='/authors'>Authors</NavLink></li>
     </>
 
     return (
@@ -22,13 +23,13 @@ const Navbar = () => {
                 <a className="btn btn-ghost text-3xl font-bold pl-0">Book Vibe</a>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu flex gap-4 menu-horizontal px-1">
+                <ul className="menu flex gap-2 menu-horizontal px-1">
                     {links}
                 </ul>
             </div>
             <div className="navbar-end flex gap-4">
-                <Link><button className="btn btn-outline bg-green-500 border-none px-5 text-white text-lg">Sign In</button></Link>
-                <Link><button className="btn btn-outline bg-sky-500 border-none px-5 text-white text-lg">Sign Up</button></Link>
+                <button className="btn btn-outline bg-green-500 border-none px-5 text-white text-lg">Sign In</button>
+                <button className="btn btn-outline bg-sky-500 border-none px-5 text-white text-lg">Sign Up</button>
             </div>
         </div>
     );

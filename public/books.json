@@ -1,0 +1,80 @@
+[
+  {
+    "book_id": 1,
+    "book_name": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "image": "https://i0.wp.com/www.raptisrarebooks.com/images/48722/the-great-gatsby-f-scott-fitzgerald-first-edition-1925-3.jpg?fit=1000%2C800&ssl=1",
+    "review": "A timeless classic that delves into the complexities of the American Dream. Celebrated as a masterpiece of literature, 'The Great Gatsby' unveils the opulent yet hollow world of the 1920s Jazz Age. Fitzgerald's intricate prose skillfully navigates themes of love, wealth, and the elusive pursuit of the American Dream. Through the enigmatic Jay Gatsby, readers are drawn into a whirlwind of excess and disillusionment, reflecting the timeless allure and ultimate emptiness of materialism. 'The Great Gatsby' stands as a poignant reminder of the fragile nature of human aspirations and the enduring power of hope amidst the chaos of life.",
+    "total_pages": 180,
+    "rating": 4.3,
+    "category": "Fiction",
+    "tags": ["Classic", "Romance"],
+    "publisher": "Charles Scribner's Sons",
+    "year_of_publishing": 1925
+  },
+  {
+    "book_id": 2,
+    "book_name": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "image": "https://images.squarespace-cdn.com/content/v1/5d9a3e73571ba84cd8112c8b/1614713448550-TF3O7VLK0PYDGS5Z4LBT/CatcherCover-Doc+copy.jpg",
+    "review": "J.D. Salinger's The Catcher in the Rye follows the disillusioned teenager Holden Caulfield as he grapples with the complexities of adolescence and society. Through Caulfield's cynical lens, Salinger explores themes of identity, alienation, and the search for authenticity. The novel's raw and candid narration offers a poignant portrayal of youth rebellion and existential angst. With its enduring relevance and universal appeal, The Catcher in the Rye remains a seminal work of literature that continues to resonate with readers of all ages.",
+    "total_pages": 224,
+    "rating": 4.1,
+    "category": "Fiction",
+    "tags": ["Coming of Age", "Cultural"],
+    "publisher": "Little, Brown and Company",
+    "year_of_publishing": 1951
+  },
+  {
+    "book_id": 3,
+    "book_name": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "image": "https://bookshopapocalypse.com/cdn/shop/products/tokillamockingbirdpb-1sq_580x.jpg?v=1654793394",
+    "review": "Harper Lee's To Kill a Mockingbird is a compelling narrative set in the racially charged atmosphere of the American South during the 1930s. Through the eyes of young Scout Finch, the novel explores themes of racial injustice, moral growth, and empathy. Atticus Finch, Scout's father, serves as a moral compass, advocating for justice and equality in the face of prejudice. Lee's masterful storytelling and vivid characters make  To Kill a Mockingbird a timeless classic that continues to provoke thought and inspire change.",
+    "total_pages": 324,
+    "rating": 4.5,
+    "category": "Fiction",
+    "tags": ["Social Commentary", "Legal Drama"],
+    "publisher": "J. B. Lippincott & Co.",
+    "year_of_publishing": 1960
+  },
+  {
+    "book_id": 4,
+    "book_name": "1984",
+    "author": "George Orwell",
+    "image": "https://acdn.mitiendanube.com/stores/001/324/853/products/1984_111-80647217c53884c17e15995789686463-480-0.png",
+    "review": "George Orwell's 1984 is a dystopian masterpiece that paints a grim picture of a totalitarian society ruled by surveillance and propaganda. Set in a world of perpetual war and government control, the novel follows protagonist Winston Smith as he rebels against the oppressive regime of Big Brother. Orwell's chilling portrayal of thought control and manipulation serves as a cautionary tale, warning against the dangers of unchecked authority and the erosion of individual freedom. 1984 remains a hauntingly relevant critique of power and ideology, resonating with readers as a stark reminder of the importance of truth and liberty.",
+    "total_pages": 328,
+    "rating": 4.6,
+    "category": "Fiction",
+    "tags": ["Dystopian", "Political Fiction"],
+    "publisher": "Secker & Warburg",
+    "year_of_publishing": 1949
+  },
+  {
+    "book_id": 5,
+    "book_name": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "image": "https://i.etsystatic.com/36466740/r/il/b48c00/5614636846/il_300x300.5614636846_sdkh.jpg",
+    "review": "Jane Austen's Pride and Prejudice is a timeless romance set in early 19th-century England, revolving around the spirited Elizabeth Bennet and the proud Mr. Darcy. Austen's keen observations of society and sharp wit provide a delightful backdrop to the romantic entanglements of her characters. Through witty dialogue and intricate social commentary, Austen explores themes of love, class, and marriage. Pride and Prejudice remains a classic of English literature, captivating readers with its enduring characters and universal themes of love and self-discovery.",
+    "total_pages": 432,
+    "rating": 4.4,
+    "category": "Fiction",
+    "tags": ["Romance", "Satire"],
+    "publisher": "T. Egerton, Whitehall",
+    "year_of_publishing": 1813
+  },
+  {
+    "book_id": 6,
+    "book_name": "The Hitchhiker's Guide to the Galaxy",
+    "author": "Douglas Adams",
+    "image": "https://images.squarespace-cdn.com/content/v1/543d97dce4b095fba39af8a1/1482960923054-TQLREW2OXKAYPVFHO5EP/SEDBooks_0020_HitchhikersGuide.jpg",
+    "review": "Douglas Adams' The Hitchhiker's Guide to the Galaxy is a whimsical and irreverent journey through the cosmos. The novel follows Arthur Dent, a hapless Earthling, and his alien friend Ford Prefect as they navigate a series of absurd and hilarious adventures. From the destruction of Earth to encounters with eccentric characters like Zaphod Beeblebrox and Marvin the Paranoid Android, Arthur's journey is a rollercoaster of absurdity and existential pondering. Through its satirical lens, The Hitchhiker's Guide explores themes of meaning, absurdity, and the human condition, leaving readers both amused and contemplative.",
+    "total_pages": 224,
+    "rating": 4.2,
+    "category": "Science Fiction",
+    "tags": ["Humor", "Adventure"],
+    "publisher": "Pan Books",
+    "year_of_publishing": 1979
+  }
+]

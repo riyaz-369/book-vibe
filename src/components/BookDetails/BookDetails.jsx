@@ -1,4 +1,7 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { saveBooks } from "../../utilities/localStorage";
 
 const BookDetails = () => {
     const books = useLoaderData();
@@ -6,8 +9,14 @@ const BookDetails = () => {
     const idInt = parseInt(book_id)
     const book = books.find(book => book.book_id === idInt);
     const { book_name, author, image, rating, category, tags, review, year_of_publishing, publisher, total_pages } = book;
+
+    const handleReadingList = () => {
+        toast.success('Successfully add to reading list.');
+        saveBooks(book);
+    }
+
     return (
-        <div className="card card-side bg-base-100">
+        <div className="card card-side bg-base-100 mb-8">
             <figure className="min-w-[576px]">
                 <img className="rounded-2xl" src={image} alt={book_name} />
             </figure>
@@ -27,7 +36,7 @@ const BookDetails = () => {
                             <p>Year of Publishing: </p>
                             <p>Rating: </p>
                         </div>
-                        <div className="">
+                        <div>
                             <div>
                                 <span className="font-semibold">{total_pages}</span>
                             </div>
@@ -44,10 +53,11 @@ const BookDetails = () => {
                     </div>
                 </div>
                 <div className="card-actions mt-4">
-                    <button className="btn btn-outline text-lg">Read</button>
-                    <button className="btn btn-outline bg-sky-500 border-none px-5 text-white text-lg">Sign In</button>
+                    <button onClick={handleReadingList} className="btn btn-outline text-lg">Read</button>
+                    <button className="btn btn-outline bg-sky-500 border-none px-5 text-white text-lg">Wishlist</button>
                 </div>
             </div>
+            <ToastContainer />
         </div>
     );
 };

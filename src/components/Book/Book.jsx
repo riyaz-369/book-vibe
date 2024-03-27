@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { NavLink } from "react-router-dom";
 
 const Book = ({ book }) => {
-
     const { book_id, book_name, author, image, rating, category, tags } = book;
 
     return (

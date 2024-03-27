@@ -2,17 +2,29 @@ import { useEffect, useState } from "react";
 import { RiPagesLine } from "react-icons/ri";
 import { FaUserFriends } from "react-icons/fa";
 import { SlLocationPin } from "react-icons/sl";
+import { Link } from "react-router-dom";
 
-const ReadBooks = () => {
+const ReadBooks = (sort) => {
     const [listedBook, setListedBook] = useState([]);
     useEffect(() => {
-        const getData = JSON.parse(localStorage.getItem('book')) || [];
-        setListedBook(getData);
+        const getReadData = JSON.parse(localStorage.getItem('book')) || [];
+        setListedBook(getReadData);
     }, [])
 
+    // sort
+    const sortedBook = (first, second) => {
+        if (sort === 'Rating') {
+            return second.rating - first.book.rating;
+        } else if (sort === 'Number of pages') {
+            return first.total_pages - second.book.total_pages;
+        } else if (sort === 'Published year') {
+            return first.year_of_publishing - second.year_of_publishing;
+        }
+    };
+
     return (
-        <div className="mt-8">
-            {listedBook.map(book =>
+        <div className="mt-8 mb-24">
+            {listedBook.sort(sortedBook).map(book =>
                 <div key={book.book_id} className="card card-side border-2 bg-base-100 pl-8 mb-8">
                     <figure className="max-w-64">
                         <img className="rounded-2xl" src={book.image} alt={book.book_name} />
@@ -50,7 +62,7 @@ const ReadBooks = () => {
                             <button
                                 className="bg-orange-100 px-3 text-orange-400 font-medium rounded-full p-1">Rating: {book.rating}
                             </button>
-                            <button className="btn btn-outline bg-green-500 border-none px-3 rounded-full text-lg text-white btn-sm">View Details</button>
+                            <Link to=''><button className="btn btn-outline bg-green-500 border-none px-3 rounded-full text-lg text-white btn-sm">View Details</button></Link>
                         </div>
                     </div>
                 </div>

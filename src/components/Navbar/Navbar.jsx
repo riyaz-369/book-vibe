@@ -2,11 +2,11 @@ import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
     const links = <>
-        <li><NavLink to='/'>Home</NavLink></li>
-        <li><NavLink to='/listed-books'>Listed Books</NavLink></li>
-        <li><NavLink to='/pages-read'>Pages to Read</NavLink></li>
-        <li><NavLink to='/latest'>Latest Books</NavLink></li>
-        <li><NavLink to='/authors'>Authors</NavLink></li>
+        <NavLink to='/' className={({ isActive }) => (isActive ? 'btn btn-outline btn-success text-base' : 'btn btn-ghost text-base')} >Home</NavLink>
+        <NavLink to='/listed-books' className={({ isActive }) => (isActive ? 'btn btn-outline btn-success text-base' : 'btn btn-ghost text-base')}>Listed Books</NavLink>
+        <NavLink to='/pages-read' className={({ isActive }) => (isActive ? 'btn btn-outline btn-success text-base' : 'btn btn-ghost text-base')}>Pages to Read</NavLink>
+        <NavLink to='/latest' className={({ isActive }) => (isActive ? 'btn btn-outline btn-success text-base' : 'btn btn-ghost text-base')}>Latest Books</NavLink>
+        <NavLink to='/authors' className={({ isActive }) => (isActive ? 'btn btn-outline btn-success text-base' : 'btn btn-ghost text-base')}>Authors</NavLink>
     </>
 
     return (
@@ -20,7 +20,7 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <Link to='/' className="btn btn-ghost text-3xl font-bold pl-0">Book Vibe</Link>
+                <Link to='/' className="btn btn-ghost text-[32px]  font-bold pl-0">Book Vibe</Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu flex gap-2 menu-horizontal px-1">

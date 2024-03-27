@@ -5,8 +5,8 @@ const Navbar = () => {
         <NavLink to='/' className={({ isActive }) => (isActive ? 'btn btn-outline btn-success text-base' : 'btn btn-ghost text-base')} >Home</NavLink>
         <NavLink to='/listed-books' className={({ isActive }) => (isActive ? 'btn btn-outline btn-success text-base' : 'btn btn-ghost text-base')}>Listed Books</NavLink>
         <NavLink to='/pages-read' className={({ isActive }) => (isActive ? 'btn btn-outline btn-success text-base' : 'btn btn-ghost text-base')}>Pages to Read</NavLink>
-        <NavLink to='/latest' className={({ isActive }) => (isActive ? 'btn btn-outline btn-success text-base' : 'btn btn-ghost text-base')}>Latest Books</NavLink>
         <NavLink to='/authors' className={({ isActive }) => (isActive ? 'btn btn-outline btn-success text-base' : 'btn btn-ghost text-base')}>Authors</NavLink>
+        <NavLink to='/latest' className={({ isActive }) => (isActive ? 'btn btn-outline btn-success text-base' : 'btn btn-ghost text-base')}>Latest Books</NavLink>
     </>
 
     return (

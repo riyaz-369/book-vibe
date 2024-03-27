@@ -4,8 +4,8 @@ import { Link, Outlet } from "react-router-dom";
 
 const ListedBooks = () => {
     const [idx, setIdx] = useState(0);
+    
     const [sort, setSort] = useState(null);
-
     const handleSort = (value) => {
         setSort(value);
     }

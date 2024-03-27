@@ -11,7 +11,7 @@ const Wishlist = (sort) => {
         setListedBook(getData);
     }, []);
 
-    // sort
+    // sort data
     const sortedWishlist = (first, second) => {
         if (sort === 'rating') {
             return second.rating - first.Rating;
@@ -21,7 +21,6 @@ const Wishlist = (sort) => {
             return first.year_of_publishing - second.year_of_publishing;
         }
     };
-    // console.log('sorted data')
 
     return (
         <div className="mt-8 mb-24">

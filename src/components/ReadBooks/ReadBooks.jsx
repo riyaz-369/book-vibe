@@ -14,26 +14,26 @@ const ReadBooks = () => {
     return (
         <div className="mt-8 mb-24">
             {listedBook.map(book =>
-                <div key={book.book_id} className="card card-side border-2 bg-base-100 pl-8 mb-8">
-                    <figure className="max-w-64">
+                <div key={book.book_id} className="card lg:card-side border-2 bg-base-100 lg:pl-8 mb-8">
+                    <figure className="w-full lg:max-w-64">
                         <img className="rounded-2xl" src={book.image} alt={book.book_name} />
                     </figure>
                     <div className="card-body">
-                        <h2 className="card-title text-4xl">{book.book_name}</h2>
+                        <h2 className="card-title text-2xl lg:text-4xl">{book.book_name}</h2>
                         <p>By: {book.author}</p>
-                        <p className="flex"><span className="font-bold">Tag:</span>
+                        <p className="space-y-4 lg:space-y-0 lg:flex"><span className="font-bold">Tag:</span>
                             <button
-                                className="bg-green-100 px-4 ml-4 mr-2 text-green-500 font-medium rounded-full p-1">#{book.tags[0]}
+                                className="bg-green-100 lg:px-4 ml-4 mr-2 text-green-500 font-medium rounded-full p-1">#{book.tags[0]}
                             </button>
                             <button
-                                className="bg-green-100 px-4 text-green-500 font-medium rounded-full p-1 mr-5">#{book.tags[1]}
+                                className="bg-green-100 lg:px-4 text-green-500 font-medium rounded-full p-1 lg:mr-5">#{book.tags[1]}
                             </button>
                             <div className="flex items-center gap-2">
                                 <SlLocationPin />
                                 <span>Year of Publishing: {book.year_of_publishing}</span>
                             </div>
                         </p>
-                        <div className="flex gap-7">
+                        <div className="lg:flex gap-7">
                             <div className="flex items-center gap-2">
                                 <FaUserFriends />
                                 <span> Publisher: {book.publisher}</span>

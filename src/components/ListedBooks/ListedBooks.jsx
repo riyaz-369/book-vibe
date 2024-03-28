@@ -8,9 +8,9 @@ const ListedBooks = () => {
 
     return (
         <div>
-            <h1 className="text-5xl text-center font-bold mb-10 bg-[#1313130D] p-8 rounded-xl">Books</h1>
+            <h1 className="text-3xl lg:text-5xl text-center font-bold mb-10 bg-[#1313130D] p-8 rounded-xl">Books</h1>
             <div className="dropdown dropdown-bottom flex justify-center">
-                <div tabIndex={0} role="button" className="btn btn-outline bg-green-500 border-none px-5 text-white text-lg">Sort By <TiArrowSortedDown /> </div>
+                <div tabIndex={0} role="button" className="btn btn-outline bg-green-500 border-none lg:px-5 text-white text-lg">Sort By <TiArrowSortedDown /> </div>
                 <ul tabIndex={0} className="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-box w-52">
                     <li><a>Rating</a></li>
                     <li><a>Number of pages</a></li>

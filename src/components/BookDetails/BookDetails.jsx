@@ -28,8 +28,8 @@ const BookDetails = () => {
     }
 
     return (
-        <div className="card card-side bg-base-100 mb-8">
-            <figure className="min-w-[576px]">
+        <div className="card lg:card-side bg-base-100 mb-8">
+            <figure className="w-full lg:min-w-[576px]">
                 <img className="rounded-2xl" src={image} alt={book_name} />
             </figure>
             <div className="card-body">
@@ -37,7 +37,7 @@ const BookDetails = () => {
                 <p>By: {author}</p> <hr />
                 <p>{category}</p> <hr />
                 <p className="font-bold">Review: <span className="font-normal">{review}</span></p> <br />
-                <p className="font-bold">Tag: <button className="bg-green-100 px-4 ml-4 mr-2 text-green-500 font-medium rounded-full p-1">#{tags[0]}</button>
+                <p className="font-bold">Tag: <button className="bg-green-100 px-4 lg:ml-4 mr-2 text-sm lg:text-base text-green-500 font-medium rounded-full p-1">#{tags[0]}</button>
                     <button className="bg-green-100 px-4 text-green-500 font-medium rounded-full p-1">#{tags[1]}</button></p>
                 <hr /> <br />
                 <div>

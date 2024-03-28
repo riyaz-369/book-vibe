@@ -3,12 +3,8 @@ import { TiArrowSortedDown } from "react-icons/ti";
 import { Link, Outlet } from "react-router-dom";
 
 const ListedBooks = () => {
+
     const [idx, setIdx] = useState(0);
-    
-    const [sort, setSort] = useState(null);
-    const handleSort = (value) => {
-        setSort(value);
-    }
 
     return (
         <div>
@@ -16,9 +12,9 @@ const ListedBooks = () => {
             <div className="dropdown dropdown-bottom flex justify-center">
                 <div tabIndex={0} role="button" className="btn btn-outline bg-green-500 border-none px-5 text-white text-lg">Sort By <TiArrowSortedDown /> </div>
                 <ul tabIndex={0} className="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-box w-52">
-                    <li><a onClick={() => handleSort('Rating')}>Rating</a></li>
-                    <li><a onClick={() => handleSort('Number of pages')}>Number of pages</a></li>
-                    <li><a onClick={() => handleSort('Published year')}>Published year</a></li>
+                    <li><a>Rating</a></li>
+                    <li><a>Number of pages</a></li>
+                    <li><a>Published year</a></li>
                 </ul>
             </div>
             {/* my tabs */}
@@ -32,7 +28,7 @@ const ListedBooks = () => {
                     </Link>
                 </div>
             </div>
-            <Outlet sort={sort}></Outlet>
+            <Outlet></Outlet>
         </div>
     );
 };

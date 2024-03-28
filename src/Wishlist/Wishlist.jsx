@@ -2,29 +2,18 @@ import { useEffect, useState } from "react";
 import { RiPagesLine } from "react-icons/ri";
 import { FaUserFriends } from "react-icons/fa";
 import { SlLocationPin } from "react-icons/sl";
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
-const Wishlist = (sort) => {
+const Wishlist = () => {
     const [listedBook, setListedBook] = useState([]);
     useEffect(() => {
         const getData = JSON.parse(localStorage.getItem('wishlist')) || [];
         setListedBook(getData);
     }, []);
 
-    // sort data
-    const sortedWishlist = (first, second) => {
-        if (sort === 'rating') {
-            return second.rating - first.Rating;
-        } else if (sort === 'Number of pages') {
-            return first.total_pages - second.total_pages;
-        } else if (sort === 'Published year') {
-            return first.year_of_publishing - second.year_of_publishing;
-        }
-    };
-
     return (
         <div className="mt-8 mb-24">
-            {listedBook.sort(sortedWishlist).map(book =>
+            {listedBook.map(book =>
                 <div key={book.book_id} className="card card-side border-2 bg-base-100 pl-8 mb-8">
                     <figure className="max-w-64">
                         <img className="rounded-2xl" src={book.image} alt={book.book_name} />
